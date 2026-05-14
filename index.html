@@ -85,6 +85,24 @@
         }
         .role-title { font-size: 2rem; color: #FFC107; margin-bottom: 10px;}
         .role-desc { font-size: 1.1rem; line-height: 1.5; color: #CCC;}
+	/* --- 修復平板畫面裁切與滑動問題 --- */
+        body, html {
+            min-height: 100vh;
+            overflow-y: auto;
+        }
+
+        #result-container, .container {
+            max-height: none !important; 
+            overflow: visible !important;
+            padding-bottom: 50px;
+        }
+
+        #result-img {
+            max-width: 100%; 
+            height: auto; 
+            display: block;
+            margin: 20px auto;
+        }
     </style>
 </head>
 <body>
